@@ -28,7 +28,7 @@ const font = {
 
 const component = {
 	header: {
-		height: size.xl
+		height: size.l
 	},
 	body: {
 		margin: size.xs

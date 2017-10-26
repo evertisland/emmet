@@ -19,6 +19,9 @@ const Border = styled.div`
 const LayoutContainer = styled.div`
   margin: ${ui.component.body.margin};
   padding-top: ${ui.component.header.height};
+  background: brown;
+  width: 100%;
+  display: flex;
 `
 const TemplateWrapper = ({ children }) => (
   <LayoutContainer>
@@ -34,9 +37,7 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
-    <div>
-      {children()}
-    </div>
+		{children()}
   </LayoutContainer>
 )
 

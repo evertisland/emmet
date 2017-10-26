@@ -8,11 +8,11 @@ const Title = styled.h1`
   padding: ${ui.size.s};
   
 `
-const ContactPage = () => (
+const WhoPage = () => (
   <div>
-    <Title>Contact Page</Title>
-    <Link to="/">Go back to the homepage</Link>
+    <Title>Who Page</Title>
+    <p>Some information about ones self</p>
   </div>
 )
 
-export default ContactPage
+export default WhoPage
