@@ -9,6 +9,7 @@
     "gatsby-plugin-catch-links": "^1.0.9",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-styled-components": "^1.0.5",
+    "gatsby-source-filesystem": "^1.5.5",
     "gatsby-transformer-remark": "^1.7.17"
   },
   "keywords": [
