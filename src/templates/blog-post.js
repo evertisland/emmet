@@ -21,7 +21,11 @@ const Container = styled.div`
 			border: ${ui.size.xxs} solid ${ui.color.content};
 			border-bottom: 0;
 			border-top: 0;
-		}		
+		}
+		img {
+			max-width: 100%;
+			margin: ${ui.size.m} 0;
+		}
   }
   padding-bottom: ${ui.size.xxl};
 `
