@@ -3,8 +3,8 @@ backend:
   repo: evertisland/emmet # Path to your Github repository
   branch: master # Branch to update (master by default)
 
-media_folder: "src/pages/posts/uploads" # Folder where user uploaded files should go
-
+media_folder: "static/images" # Folder where user uploaded files should go
+public_fodler: "images"
 collections: # A list of collections the CMS should be able to edit
   - name: "journal" # Used in routes, e.g., /admin/collections/:slug/edit
     label: "Post" # Used in the UI, e.g., "New Post"
