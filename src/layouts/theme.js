@@ -1,7 +1,7 @@
 const color = {
 	background: '#ECEBF3',
 	content: '#0C120C',
-	accent: '#C20114',
+	accent: 'orange', // '#C20114',
 	contentDark: '#C7D6D5',
 	contentDarker: '#6D7275'
 }
