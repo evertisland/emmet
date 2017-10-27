@@ -22,4 +22,5 @@ export default styled(IndexPage)`
   background-image: url(${backgroundImage});
   background-size: cover;
   background-position: center;
+  padding: ${ui.size.s};
 `
