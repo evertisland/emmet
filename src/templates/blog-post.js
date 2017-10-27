@@ -16,10 +16,12 @@ const Container = styled.div`
   }
   .blog-post-content {
 		text-align: justify;
-		border: ${ui.size.xxs} solid ${ui.color.content};
-		border-bottom: 0;
-		border-top: 0;
 		padding: 0 ${ui.size.m};
+		@media (min-width: 768px) {
+			border: ${ui.size.xxs} solid ${ui.color.content};
+			border-bottom: 0;
+			border-top: 0;
+		}		
   }
   padding-bottom: ${ui.size.xxl};
 `

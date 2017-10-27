@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import ui from '../layouts/theme'
-import backgroundImage from '../../static/images/siargao_map.jpg'
+//import backgroundImage from '../../static/images/siargao_map.jpg'
+import backgroundImage from '../../static/images/rust.jpg'
 const Title = styled.h1`
   background: ${ui.color.accent};
   padding: ${ui.size.s};

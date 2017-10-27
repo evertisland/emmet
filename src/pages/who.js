@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import ui from '../layouts/theme'
-import backgroundImage from '../../static/images/gangster.jpg'
+import backgroundImage from '../../static/images/house.jpg'
 
 const Title = styled.h1`
   background: ${ui.color.accent};
