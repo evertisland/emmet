@@ -45,7 +45,7 @@ export default function Journal ({	data }) {
 	const { edges: posts } = data.allMarkdownRemark;
 	return (
 		<Container className="blog-posts">
-			<Title>Journal</Title>
+			<Title>Le Journal de Paul</Title>
 			<div>
 				{posts
 					.filter(post => post.node.frontmatter.title.length > 0)
