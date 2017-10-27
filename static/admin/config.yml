@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: evertisland/emmet # Path to your Github repository
+  branch: master # Branch to update (master by default)
+
+media_folder: "img/uploads" # Folder where user uploaded files should go
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "journal" # Used in routes, e.g., /admin/collections/:slug/edit
+    label: "Post" # Used in the UI, e.g., "New Post"
+    folder: "src/pages/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: # The fields each document in this collection have
+      - {label: "Path", name: "path", widget: "string"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
