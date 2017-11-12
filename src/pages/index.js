@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import ui from '../layouts/theme'
 import GatsbyImage from 'gatsby-image'
-import Journal, { pageQuery } from '../components/Journal'
+import Journal from '../components/Journal'
 const Title = styled.h1`
   color: ${ui.color.background};
 `
@@ -27,7 +27,7 @@ const IndexPage = ({ className, data }) => (
       style={{ position: `absolute`, top: 0, left: 0, right: 0, bottom: 0}}
     />
     <Content>
-      <Journal data={pageQuery}/>
+      <Journal posts={data.allMarkdownRemark.edges} />
     </Content>
   </div>
 )
@@ -39,15 +39,28 @@ export default styled(IndexPage)`
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-top: ${ui.component.header.height};
+  padding-top: 50px;
 `
 
-export const query = graphql`
-  query FrontPageQuery {
+export const queries = graphql`
+  query IndexAndBackgroundQueries {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          excerpt(pruneLength: 250)
+          id
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+            path
+          }
+        }
+      }
+    }
     imageSharp(id: { regex: "/house-in-the-jungle/" }) {
       sizes(maxWidth: 1500) {
         ...GatsbyImageSharpSizes
       }
     }
   }
-`
+`;

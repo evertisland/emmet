@@ -3,14 +3,18 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components'
 import ui from '../layouts/theme'
 const Container = styled.div`
-	height: 100%;
-  max-width: 750px;
-  margin: 0 auto;  
+	height: 100%;    
   flex: 1;
   display: flex;
-  padding: ${ui.size.s};
+  justify-content: center;
   color: ${ui.color.content};
+  background: ${ui.color.background};
+  .content {
+  	max-width: 750px;
+  	flex: 1;  	
+  }
   h1 {
+  	text-align: center;
   	margin: ${ui.size.m} 0;
   	padding-left: ${ui.size.ml};
   }
@@ -37,8 +41,10 @@ export default function Template({ data }) {
 		<Container className="blog-post-container">
 			<Helmet title={`Paul Emmet - ${post.frontmatter.title}`} />
 			<div className="blog-post">
-				<h1>{post.frontmatter.title}</h1>
-				<div className="blog-post-content" dangerouslySetInnerHTML={{ __html: post.html }} />
+				<div className="content">
+					<h1>{post.frontmatter.title}</h1>
+					<div className="blog-post-content" dangerouslySetInnerHTML={{ __html: post.html }} />
+				</div>
 			</div>
 		</Container>
 	);
