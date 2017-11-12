@@ -8,7 +8,7 @@ import './index.css'
 
 const Border = styled.div`
   position: fixed;
-  background: ${ui.color.contentDark};  
+  background: rgba(14,17,17,1);
   width: ${props => (props.left || props.right) ? ui.component.body.margin : 'auto'};
   height: ${props => (props.top || props.bottom) ? ui.component.body.margin : 'auto'};
   top: ${props => (props.left || props.right || props.top) ? '0' : 'auto'};
@@ -17,17 +17,18 @@ const Border = styled.div`
   right: ${props => (props.right || props.bottom || props.top) ? '0' : 'auto'};
 `
 const LayoutContainer = styled.div`
-  margin: ${ui.component.body.margin};
-  padding-top: ${ui.component.header.height};
+  margin: ${ui.component.body.margin};  
   width: 100%;
   display: flex;
+  border-radius: ${ui.size.xxs};
+  overflow: hidden;
 `
 const TemplateWrapper = ({ children }) => (
   <LayoutContainer>
-    <Border top />
-    <Border right />
-    <Border bottom />
-    <Border left/>
+    {/*<Border top />*/}
+    {/*<Border right />*/}
+    {/*<Border bottom />*/}
+    {/*<Border left/>*/}
     <Helmet
       title="Paul Emmet"
       meta={[

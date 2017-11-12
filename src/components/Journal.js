@@ -2,16 +2,13 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import ui from '../layouts/theme'
-import backgroundImage from '../../static/images/aquamarine.jpg'
+
 const Container = styled.div`
   height: 100%;
   width: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
-  background-image: url(${backgroundImage});
-  background-size: cover;
-  background-position: center;
   padding: ${ui.size.s};
 `
 
@@ -57,20 +54,20 @@ export default function Journal ({	data }) {
 	);
 }
 
-// export const pageQuery = graphql`
-//   query IndexQuery {
-//     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-//       edges {
-//         node {
-//           excerpt(pruneLength: 250)
-//           id
-//           frontmatter {
-//             title
-//             date(formatString: "MMMM DD, YYYY")
-//             path
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
+export const pageQuery = graphql`
+  query IndexQuery {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          excerpt(pruneLength: 250)
+          id
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+            path
+          }
+        }
+      }
+    }
+  }
+`;

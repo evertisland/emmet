@@ -7,15 +7,16 @@ const Header = ({ className }) => (
 	<div className={className}>
 		<h1><Link to="/">paul emmet</Link></h1>
 		<div>
-			<h2><Link to="/who">who?</Link></h2>
-			<h2><Link to="/journal">journal</Link></h2>
+			{/*<h2><Link to="/who">who?</Link></h2>*/}
+			{/*<h2><Link to="/journal">journal</Link></h2>*/}
 			<h2><Link to="/contact">contact</Link></h2>
 		</div>
 
 	</div>
 )
 export default styled(Header)`
-	background-color: ${ui.color.contentDarker};
+	background: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent);
+	z-index: 1;
 	position: fixed;
 	padding ${ui.size.s};
 	height: ${ui.component.header.height};
@@ -30,9 +31,10 @@ export default styled(Header)`
 		margin-top: -4px;
 		line-height: 0.7;
 		font-size: ${ui.size.ml};
-		color: ${ui.color.contentDark};
+		color: ${ui.color.white};
+		text-shadow: 0 0 20px black; 
 		&:hover {
-			color: ${ui.color.content};
+			color: ${ui.color.accent};
 		}
 	}
 	div {
@@ -40,8 +42,9 @@ export default styled(Header)`
 		h2 {
 			margin-left: ${ui.size.s};
 			font-size: ${ui.size.m};
+			text-shadow: 0 0 10px white; 
 			&:hover {
-				color: ${ui.color.contentDark};
+				color: ${ui.color.accent};				
 			}
 		}
 	}

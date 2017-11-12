@@ -1,4 +1,5 @@
 const color = {
+	white: '#FFF',
 	background: '#ECEBF3',
 	content: '#0C120C',
 	accent: 'orange', // '#C20114',
