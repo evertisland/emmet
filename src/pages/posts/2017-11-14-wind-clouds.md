@@ -1,5 +1,5 @@
 ---
-path: African Odyssey
+path: /african-odyssey
 layout: blog
 title: Wind Clouds
 date: 2017-11-14T08:24:08.714Z
