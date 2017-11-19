@@ -57,7 +57,7 @@ export const queries = graphql`
         }
       }
     }
-    imageSharp(id: { regex: "/house-in-the-jungle/" }) {
+    imageSharp(id: { regex: "/dogs/" }) {
       sizes(maxWidth: 1500) {
         ...GatsbyImageSharpSizes
       }
