@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto+Mono');
 * {
   box-sizing: border-box
 }
@@ -7,9 +7,9 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   height: 100%;
-  background-color: rgba(14,17,17,1);
   font-size: 1.25rem;
-  font-family: Lato;
+  font-family: 'Roboto Mono';
+  background-color: black;
 }
 body {
   min-height: 100%;
@@ -26,3 +26,8 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.title, h1, h2, h3, h4 {
+  font-family: 'Josefin Sans'
+}
+

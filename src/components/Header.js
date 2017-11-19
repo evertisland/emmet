@@ -15,10 +15,11 @@ const Header = ({ className }) => (
 	</div>
 )
 export default styled(Header)`
-	background: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent);
+	//background: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent);
 	z-index: 1;
 	position: fixed;
-	padding ${ui.size.s} ${ui.size.m} ;
+	//padding ${ui.size.s} ${ui.size.m};
+	padding: 1px 5px;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -30,8 +31,9 @@ export default styled(Header)`
 		margin: 2px 0;
 		line-height: 0.7;
 		font-size: ${ui.size.ml};
-		color: ${ui.color.white};
-		text-shadow: 0 0 20px black; 
+		
+		color: rgba(14,17,17,0.4); //${ui.color.white};
+		//text-shadow: 0 0 20px black; 
 		&:hover {
 			color: ${ui.color.accent};
 		}
