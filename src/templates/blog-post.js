@@ -2,9 +2,22 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import ui from '../layouts/theme'
-import { debounce } from '../common/functions'
+import { debounce } from '../common/functionality'
 
-export default class Template extends Component {
+const pageQuery = graphql`
+  query BlogPostByPath($path: String!) {
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
+      html
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        path
+        title
+      }
+    }
+  }
+`
+
+export default styled(class Template extends Component {
 	constructor(props) {
 		super(props);
 		this.handleScroll = debounce(this.handleScroll.bind(this), 250, true)
@@ -78,7 +91,7 @@ export default class Template extends Component {
 	render() {
 		const { markdownRemark: post } = this.props.data
 		return (
-			<Container className="blog-post-container">
+			<div className={this.props.className}>
 				<Helmet title={`Paul Emmet - ${post.frontmatter.title}`} />
 				<div className="blog-post">
 					<div className="content" ref={el => this.container = el}>
@@ -86,24 +99,11 @@ export default class Template extends Component {
 						<div className="blog-post-content" dangerouslySetInnerHTML={{ __html: post.html }} />
 					</div>
 				</div>
-			</Container>
+			</div>
 		);
 	}
-}
-export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        path
-        title
-      }
-    }
-  }
-`
-const Container = styled.div`
-  display: flex;
+})`
+	display: flex;
   color: ${ui.color.content};
   background: ${ui.color.white};
   padding: ${ui.size.xxs}; 
