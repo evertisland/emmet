@@ -1,76 +1,79 @@
-import React, { Component } from 'react';
-import Helmet from 'react-helmet';
+import React, { Component } from 'react'
+import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import ui from '../layouts/theme'
 import { debounce } from '../common/functions'
 
-const Container = styled.div`
-  display: flex;
-  color: ${ui.color.content};
-  background: ${ui.color.white};
-  padding: ${ui.size.xxs}; 
-  padding-bottom: ${ui.size.xxl}; 
-  max-height: 100vh;  
-  overflow-x: visible;
-  width: 100vw;
-  overflow-y: hidden;  
-  .content {
-  	width: 100vw;
-		.blog-post-content {  		  
-			text-align: justify;	  	
-			column-width: 100vw;
-			column-gap: 0;
-			column-rule: 2px dashed rgba(14,17,17,0.4);
-			max-height: 90vh;	
-			p {
-				padding: ${ui.size.m};		
-			}
-			img {
-				max-width: 100%;
-				margin: ${ui.size.m} 0;
-			}	
-			@media (min-width: 768px) {
-				column-width: 50vw;
-			}
-		}
-	}
-  .blog-post-title {
-  	column-span: all;
-  	margin: ${ui.size.m} 0;
-  	padding: 0;
-  	font-size: 50px;
-  	letter-spacing: -5px;
-  	border-bottom: ${ui.size.s} dashed black;
-  }    
-`
-
 export default class Template extends Component {
 	constructor(props) {
 		super(props);
-		this.handleScroll = debounce(this.handleScroll.bind(this), 250)
+		this.handleScroll = debounce(this.handleScroll.bind(this), 250, true)
+		this.scroll = this.scroll.bind(this)
 		this.state = {
-			lastScrollLeft: 0,
+			lastScrollPosition: 0,
+			lastScrollDirection: 'back',
 			scrollInProgress: false
 		}
 	}
 
 	componentDidMount() {
+		window.addEventListener('resize', this.handleScroll)
 		this.container.addEventListener('wheel', this.handleScroll)
 	}
 
 	componentWillUnmount() {
+		window.removeEventListener('resize', this.handleScroll)
 		this.container.removeEventListener('wheel', this.handleScroll)
 	}
+	scroll(event) {
+		console.log('scrolling')
+		const { lastScrollPosition } = this.state;
+		const container = this.container.parentNode.parentNode;
+		let offset = window.matchMedia("(min-width: 768px)") ? container.clientWidth / 2 : container.clientWidth;
+
+		const getPosition = direction => {
+			return {
+				behavior: 'smooth',
+				left: direction ? lastScrollPosition + offset : lastScrollPosition - offset,
+				top: 0
+			}
+		}
+		if (event.deltaX === 1 || event.deltaY === 1) {
+			console.log('forward')
+			//container.scroll(getPosition(true))
+			this.setState({lastScrollPosition: container.scrollLeft})
+			return
+		}
+		if (event.deltaX === -1 || event.deltaY === -1) {
+			console.log('back')
+			//container.scroll(getPosition(false))
+			this.setState({lastScrollPosition: container.scrollLeft})
+		}
+		setTimeout( () => {
+			this.setState({scrollInProgress: false})
+		}, 250)
+	}
 	handleScroll(event) {
-		//
-		// if (event.deltaX === 1 || event.deltaY === 1) {
-		// 	console.log('forward')
-		// 	this.container.parentNode.parentNode.scrollTo(1000,0)
-		// }
-		// if (event.deltaX === -1 || event.deltaY === -1) {
-		// 	console.log('back')
-		// 	this.container.parentNode.parentNode.scrollTo(0,0)
-		// }
+		const { scrollInProgress, lastScrollDirection} = this.state;
+		if (event.deltaX === 1 || event.deltaY === 1) {
+			if (lastScrollDirection !== 'back' && !scrollInProgress) {
+				this.setState({
+					scrollInProgress: true,
+					lastScrollDirection: 'forward'
+				})
+				this.scroll(event)
+			}
+			return
+		}
+		if (event.deltaX === -1 || event.deltaY === -1) {
+			if (lastScrollDirection !== 'forward' && !scrollInProgress) {
+				this.setState({
+					scrollInProgress: true,
+					lastScrollDirection: 'back'
+				})
+				this.scroll(event)
+			}
+		}
 	}
 	render() {
 		const { markdownRemark: post } = this.props.data
@@ -98,4 +101,43 @@ export const pageQuery = graphql`
       }
     }
   }
+`
+const Container = styled.div`
+  display: flex;
+  color: ${ui.color.content};
+  background: ${ui.color.white};
+  padding: ${ui.size.xxs}; 
+  padding-bottom: ${ui.size.xxl}; 
+  max-height: 100vh;  
+  overflow-x: visible;
+  width: 100vw;
+  overflow-y: hidden; 
+  .content {
+  	width: 100vw;
+		.blog-post-content { 		  
+			text-align: justify;	  	
+			column-width: 100vw;
+			column-gap: 0;
+			column-rule: 2px dashed rgba(14,17,17,0.4);
+			max-height: 90vh;	
+			p {
+				padding: ${ui.size.m};		
+			}
+			img {
+				max-width: 100%;
+				margin: ${ui.size.m} 0;
+			}	
+			@media (min-width: 768px) {
+				column-width: 50vw;
+			}
+		}
+	}
+  .blog-post-title {
+  	column-span: all;
+  	margin: ${ui.size.m} 0;
+  	padding: 0;
+  	font-size: 50px;
+  	letter-spacing: -5px;
+  	border-bottom: ${ui.size.s} dashed black;
+  }    
 `
