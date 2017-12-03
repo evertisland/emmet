@@ -7,6 +7,7 @@ const Container = styled.div`
   height: 100%;
   width: 100%;
   flex: 1;  
+  overflow-y: auto;
   .blog-posts {
 		display: flex;
 		flex-direction: row;
