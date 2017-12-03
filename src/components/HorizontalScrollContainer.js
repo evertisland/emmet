@@ -29,7 +29,7 @@ export default styled(class HorizontalScrollContainer extends Component {
 	}
 
 	scroll(direction, behavior) {	
-		const viewportWidth = window.matchMedia("(min-width: 768px)")
+		const viewportWidth = (window.outerWidth > 767)
 			? this.container.parentNode.clientWidth / 2
 			: this.container.parentNode.clientWidth;
 
