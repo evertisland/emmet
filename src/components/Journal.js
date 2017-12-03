@@ -15,15 +15,12 @@ const Container = styled.div`
 `
 
 const Preview = styled.div`		
-	@media (min-width: 768px) {
-		width: 50%;
-	}
 	margin-bottom: ${ui.size.xs};
+	width: 100%;
 	.blog-post-preview {
 		background: rgba(0,0,0,0.5);
 		margin: ${ui.size.xxs};
-		padding: ${ui.size.m};
-		border-radius: ${ui.size.xxs};
+		padding: ${ui.size.s};
 		transition: background ease-in-out .2s;
 		height: 100%;
 		&:hover {
@@ -36,12 +33,17 @@ const Preview = styled.div`
 	}
 	h2 {
 		font-size: ${ui.size.ms};
+		line-height: 0.2;
 		color: ${ui.color.contentDark};
-		margin: ${ui.size.xs} 0;
+		margin-top: ${ui.size.xs};
 	}
 	p {
 		color: ${ui.color.white};
 		font-weight: 200;
+		font-size: ${ui.size.ms}
+	}
+	@media (min-width: 768px) {
+		width: 50%;
 	}
 `
 
@@ -58,7 +60,7 @@ export default function Journal ({ posts }) {
 									<div className="blog-post-preview">
 										<h1>{post.frontmatter.title}</h1>
 										<h2>{post.frontmatter.date}</h2>
-										<p>{post.excerpt}</p>
+										{/* <p>{post.excerpt}</p> */}
 									</div>
 								</Link>
 							</Preview>

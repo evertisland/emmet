@@ -1,41 +1,52 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import _ from 'lodash'
+import { throttle, debounce } from 'lodash'
 import ui from '../layouts/theme'
+import { log } from 'util';
 
 export default styled(class HorizontalScrollContainer extends Component {
 	constructor(props) {
 		super(props)
-		this.handleScroll = _.throttle(this.handleScroll, 1300, { trailing: false}).bind(this)
-		this.handleResize = _.throttle(this.handleResize, 100, { trailing: true}).bind(this)
+
 		this.setUpScroll = this.setUpScroll.bind(this)
+
 		this.scroll = this.scroll.bind(this)
+
+		this.handleScroll = throttle(this.handleScroll, 1300,
+			{ trailing: false, leading: true }).bind(this)
+
+		this.handleTouchStart = throttle(this.handleTouchStart, 400,
+			{ trailing: false, leading: true }).bind(this)
+		
+		this.handleTouchMove = throttle(this.handleTouchMove.bind(this), 400,
+			{ trailing: false, leading: true }).bind(this)
+
+		this.handleResize = throttle(this.handleResize, 100,
+			{ trailing: true }).bind(this)
+
 		this.state = {
-			offset: 0,
+			scrolledFromLeft: 0,
 			lastDirection: 'backward',
-			scrollInProgress: false,
-			viewportWidth: 0
+			touchStartX: 0,
+			touchStartY: 0
 		}
 	}
 
 	componentDidMount() {
-		window.addEventListener('resize', this.handleResize)
-		this.container.addEventListener('wheel', this.handleScroll)
+		window.addEventListener('resize', this.handleResize, { passive: true })
 	}
 
 	componentWillUnmount() {
 		window.removeEventListener('resize', this.handleScroll)
-		this.container.removeEventListener('wheel', this.handleScroll)
 	}
 
-	scroll(direction, behavior) {	
-		const viewportWidth = (window.outerWidth > 767)
-			? this.container.parentNode.clientWidth / 2
-			: this.container.parentNode.clientWidth;
-
+	scroll(direction, behavior) {
+		const width = this.container.parentNode.clientWidth
+		const viewportWidth = (width > 767) ? width / 2 : width
+		
 		const offset = (direction === 'forward')
-			? this.state.offset + viewportWidth
-			: this.state.offset - viewportWidth
+			? this.state.scrolledFromLeft + viewportWidth
+			: this.state.scrolledFromLeft - viewportWidth		
 		
 		this.container.scroll({
 			behavior,
@@ -43,10 +54,8 @@ export default styled(class HorizontalScrollContainer extends Component {
 			top: 0
 		})
 		this.setState({
-			scrollInProgress: false,
-			offset,
-			viewportWidth
-		})
+			viewportWidth,
+			scrolledFromLeft: (offset >= 0) ? offset: 0 })		
 	}
 
 	handleResize(event) {
@@ -60,19 +69,14 @@ export default styled(class HorizontalScrollContainer extends Component {
 	}
 
 	setUpScroll(direction) {
-		console.log('2. setUpScroll')
 		this.setState({
-			scrollInProgress: true,
 			lastDirection: direction,
-			offset: this.container.scrollLeft
+			scrolledFromLeft: this.container.scrollLeft
 		})
 		this.scroll(direction, 'smooth')	
 	}
 
-	handleScroll(event) {
-		console.log('1. handleScroll')
-		if (this.state.scrollInProgress) return
-		
+	handleScroll(event) {	
 		if (event.deltaX > 0 || event.deltaY > 0) {
 			this.setUpScroll('forward')
 		}
@@ -80,13 +84,42 @@ export default styled(class HorizontalScrollContainer extends Component {
 			this.setUpScroll('backward')
 		}
 	}
+	
+	handleTouchStart(event) {
+		this.setState({
+			touchStartX: event.touches[0].screenX,
+			touchStartY: event.touches[0].screenY
+		})
+	}
+
+	handleTouchMove(event) {
+		const { touchStartX, touchStartY} = this.state
+		const { screenX, screenY} = event.touches[0]
+		
+		if (Math.abs(screenY - touchStartY) > Math.abs(screenX - touchStartX)) {
+			if (touchStartY < screenY) {
+				this.scroll('forward', 'smooth')
+			} else {
+				this.scroll('backward', 'smooth')
+			}
+		} else {
+			if (touchStartX < screenX) {
+				this.scroll('forward', 'smooth')
+			} else {
+				this.scroll('backward', 'smooth')
+			}
+		}		
+	}
 
 	render() {
 		return (
 			<div
+				onTouchStart={this.handleTouchStart}
+				onTouchMove={this.handleTouchMove}
+				onWheel={this.handleScroll}
 				className={this.props.className}
 				ref={el => this.container = el}>
-				<div className="scroll-delimiter">
+				<div className="scroll-delimiter" onScroll={this.handleScroll}>
 					{this.props.children}
 				</div>
 			</div>
@@ -101,13 +134,10 @@ export default styled(class HorizontalScrollContainer extends Component {
 		column-width: 100vw;
 		column-gap: 0;
 		column-rule: 2px dashed rgba(14,17,17,0.4);
-		max-height: 100vh;	
+		max-height: ${props => props.blogPost ? 'calc(100vh - 60px)' : '100vh'};		
+		margin: ${props => props.blogPost ? '30px 0' : 0};	
 		@media (min-width: 768px) {
-			column-width: ${
-				props => 
-					props.blogPost
-						? '50vw' : '100vw'
-			};
+			column-width: ${props => props.blogPost? '50vw' : '100vw'};
 		}
 	}
 `

@@ -10,6 +10,7 @@ html {
   font-size: 1.25rem;
   font-family: 'Roboto Mono';
   background-color: black;
+  overflow: hidden;
 }
 body {
   min-height: 100%;
