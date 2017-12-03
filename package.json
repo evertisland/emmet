@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.108",
+    "gatsby": "^1.9.128",
     "gatsby-image": "^1.0.24",
     "gatsby-link": "^1.6.26",
     "gatsby-plugin-catch-links": "^1.0.9",
@@ -13,7 +13,8 @@
     "gatsby-plugin-styled-components": "^1.0.5",
     "gatsby-source-filesystem": "^1.5.8",
     "gatsby-transformer-remark": "^1.7.20",
-    "gatsby-transformer-sharp": "^1.6.13"
+    "gatsby-transformer-sharp": "^1.6.13",
+    "lodash": "^4.17.4"
   },
   "keywords": [
     "gatsby"

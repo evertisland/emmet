@@ -1,22 +1,25 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { debounce } from '../common/functionality'
+import _ from 'lodash'
 import ui from '../layouts/theme'
 
 export default styled(class HorizontalScrollContainer extends Component {
 	constructor(props) {
-		super(props);
-		this.handleScroll = debounce(this.handleScroll.bind(this), 10, true)
+		super(props)
+		this.handleScroll = _.throttle(this.handleScroll, 1300, { trailing: false}).bind(this)
+		this.handleResize = _.throttle(this.handleResize, 100, { trailing: true}).bind(this)
+		this.setUpScroll = this.setUpScroll.bind(this)
 		this.scroll = this.scroll.bind(this)
 		this.state = {
-			lastOffset: 0,
-			lastDirection: 'back',
-			scrollInProgress: false
+			offset: 0,
+			lastDirection: 'backward',
+			scrollInProgress: false,
+			viewportWidth: 0
 		}
 	}
 
 	componentDidMount() {
-		window.addEventListener('resize', this.handleScroll)
+		window.addEventListener('resize', this.handleResize)
 		this.container.addEventListener('wheel', this.handleScroll)
 	}
 
@@ -25,52 +28,58 @@ export default styled(class HorizontalScrollContainer extends Component {
 		this.container.removeEventListener('wheel', this.handleScroll)
 	}
 
-	scroll(direction, event) {
-		console.log(direction)
-		const { lastOffset } = this.state;
-		const container = this.container.parentNode.parentNode;
-		let offset = window.matchMedia("(min-width: 768px)") ? container.clientWidth / 2 : container.clientWidth;
+	scroll(direction, behavior) {	
+		const viewportWidth = window.matchMedia("(min-width: 768px)")
+			? this.container.parentNode.clientWidth / 2
+			: this.container.parentNode.clientWidth;
 
-		const getPosition = direction => {
-			return {
-				behavior: 'smooth',
-				left: direction ? lastOffset + offset : lastOffset - offset,
-				top: 0
-			}
+		const offset = (direction === 'forward')
+			? this.state.offset + viewportWidth
+			: this.state.offset - viewportWidth
+		
+		this.container.scroll({
+			behavior,
+			left: offset,
+			top: 0
+		})
+		this.setState({
+			scrollInProgress: false,
+			offset,
+			viewportWidth
+		})
+	}
+
+	handleResize(event) {
+		// SKIP SCROLL IF NO CONTAINER REF
+		if (!this.container) return
+		if (event.target.innerWidth > this.state.viewportWidth) {
+			this.scroll('forward', 'instant')
+		} else {
+			this.scroll('backward', 'instant')
 		}
-		if (event.deltaX === 1 || event.deltaY === 1) {
-			console.log('forward')
-			//container.scroll(getPosition(true))
-			this.setState({lastOffset: container.scrollLeft})
-			return
-		}
-		if (event.deltaX === -1 || event.deltaY === -1) {
-			//console.log('back')
-			//container.scroll(getPosition(false))
-			this.setState({lastOffset: container.scrollLeft})
-		}
-		this.setState({scrollInProgress: false})
+	}
+
+	setUpScroll(direction) {
+		console.log('2. setUpScroll')
+		this.setState({
+			scrollInProgress: true,
+			lastDirection: direction,
+			offset: this.container.scrollLeft
+		})
+		this.scroll(direction, 'smooth')	
 	}
 
 	handleScroll(event) {
-		const initializeScroll = (direction, event) => {
-			if (!this.state.scrollInProgress ||
-				direction !== this.state.lastDirection) {
-				this.setState({
-					scrollInProgress: true,
-					lastDirection: direction
-				})
-				debounce(this.scroll(direction, event), 100, false)
-			}
+		console.log('1. handleScroll')
+		if (this.state.scrollInProgress) return
+		
+		if (event.deltaX > 0 || event.deltaY > 0) {
+			this.setUpScroll('forward')
 		}
-		if (event.deltaX === 1 || event.deltaY === 1) {
-			initializeScroll('forward', event)
-		}
-		if (event.deltaX === -1 || event.deltaY === -1) {
-			initializeScroll('backward', event)
+		if (event.deltaX < 0 || event.deltaY < 0) {
+			this.setUpScroll('backward')
 		}
 	}
-
 
 	render() {
 		return (
@@ -85,10 +94,8 @@ export default styled(class HorizontalScrollContainer extends Component {
 	}
 })`
 	max-height: 100vh;  
-  overflow-x: visible;
-	width: 100vw;
-	overflow-y: hidden;
-	
+  	overflow: hidden;
+	width: 100vw;	
 	.scroll-delimiter {
 		text-align: justify;	  	
 		column-width: 100vw;

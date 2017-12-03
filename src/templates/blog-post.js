@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import ui from '../layouts/theme'
 import HorizontalScrollContainer from '../components/HorizontalScrollContainer'
 
-const pageQuery = graphql`
+export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
@@ -37,13 +37,11 @@ export default styled( ({ className, data }) => (
 ))`
 	display: flex;
   color: ${ui.color.content};
-  background: ${ui.color.white};
+	background: ${ui.color.white};
   .blog-post-padding {
-  	padding: ${ui.size.xxs}; 
-  }  
-	p {
-		padding: ${ui.size.m};		
+		padding: ${ui.size.m}; 
 	}
+	
 	img {
 		max-width: 100%;
 		margin: ${ui.size.m} 0;
