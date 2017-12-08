@@ -12,8 +12,7 @@ const BackgroundImage = styled(GatsbyImage)`
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  
+  bottom: 0;  
 `
 const Content = styled.div`
   z-index:1;
@@ -25,6 +24,10 @@ const LandingPage = styled.div`
   padding: ${ui.size.s}
   width: 100vw;
   height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 const IndexPage = ({ className, data }) => (
@@ -34,7 +37,6 @@ const IndexPage = ({ className, data }) => (
       style={{ position: `absolute`, top: 0, left: 0, right: 0, bottom: 0}}
     />
     <Content>
-      <LandingPage />
       <Journal posts={data.allMarkdownRemark.edges} />
     </Content>
   </div>
