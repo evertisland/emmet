@@ -33,12 +33,10 @@ const IndexPage = ({ className, data }) => (
       sizes={data.imageSharp.sizes}
       style={{ position: `absolute`, top: 0, left: 0, right: 0, bottom: 0}}
     />
-    <HorizontalScrollContainer index>
-      <Content>
-        <LandingPage />
-        <Journal posts={data.allMarkdownRemark.edges} />
-      </Content>
-    </HorizontalScrollContainer>
+    <Content>
+      <LandingPage />
+      <Journal posts={data.allMarkdownRemark.edges} />
+    </Content>
   </div>
 )
 

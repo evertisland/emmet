@@ -123,27 +123,23 @@ export default styled(class HorizontalScrollContainer extends Component {
 	}
 
 	render() {
-		if (this.state.isIOS && this.props.index) {
-			return <div> {this.props.children} </div>
-		} else {
-			return (
-				<div
-					onTouchStart={this.handleTouchStart}
-					onTouchMove={this.handleTouchMove}
-					onWheel={this.handleScroll}
-					className={this.props.className}
-					ref={el => this.container = el}>
-					<div className="scroll-delimiter" onScroll={this.handleScroll}>
-						{this.props.children}
-					</div>
+		return (
+			<div
+				onTouchStart={this.handleTouchStart}
+				onTouchMove={this.handleTouchMove}
+				onWheel={this.handleScroll}
+				className={this.props.className}
+				ref={el => this.container = el}>
+				<div className="scroll-delimiter" onScroll={this.handleScroll}>
+					{this.props.children}
 				</div>
-			)
-		}		
+			</div>
+		)
 	}
 })`
   	overflow: hidden;
 	width: 100vw;	
-	height: 100vh;
+	height: 100%;
 	.scroll-delimiter {
 		text-align: justify;	  	
 		column-width: 100vw;
