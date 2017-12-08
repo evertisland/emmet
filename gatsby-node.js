@@ -1,9 +1,9 @@
 const path = require('path');
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
-	const { createPage } = boundActionCreators;
-
-  const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
+  const { createPage } = boundActionCreators;
+  
+  const blogPostTemplate = path.resolve(__dirname, `src/templates/blog-post.js`);
 
 	return graphql(`{
     allMarkdownRemark(
