@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import ui from '../layouts/theme'
 
 const Container = styled.div`
-  height: 100%;
   width: 100%;
   flex: 1;  
   overflow-y: auto;
@@ -47,10 +46,18 @@ const Preview = styled.div`
 		width: 50%;
 	}
 `
+const Title = styled.h1`
+	color: ${ui.color.accent};
+	padding: ${ui.size.s};
+	border-bottom: 10px solid black;
+	display: inline;
+	line-height: 3;
+`
 
 export default function Journal ({ posts }) {
 	return (
 		<Container>
+			<Title>JOURNAL</Title>
 			<div className="blog-posts">
 				{posts
 					.filter(post => post.node.frontmatter.title.length > 0)

@@ -17,7 +17,7 @@ export const pageQuery = graphql`
   }
 `
 
-export default styled( ({ className, data }) => (
+export default styled(({ className, data }) => (
 	<div className={className}>
 		<Helmet title={`Paul Emmet - ${data.markdownRemark.frontmatter.title}`} />
 		<div className="blog-post">

@@ -28,12 +28,14 @@ export default styled(class HorizontalScrollContainer extends Component {
 			scrolledFromLeft: 0,
 			lastDirection: 'backward',
 			touchStartX: 0,
-			touchStartY: 0
+			touchStartY: 0,
+			isIOS: false
 		}
 	}
 
 	componentDidMount() {
 		window.addEventListener('resize', this.handleResize, { passive: true })
+		this.setState({ isIOS: /iPad|iPhone|iPod/.test(navigator.userAgent) })
 	}
 
 	componentWillUnmount() {
@@ -42,20 +44,29 @@ export default styled(class HorizontalScrollContainer extends Component {
 
 	scroll(direction, behavior) {
 		const width = this.container.parentNode.clientWidth
-		const viewportWidth = (width > 767) ? width / 2 : width
+		const viewportWidth = (width > 767 && this.props.blogPost) ? width / 2 : width
 		
 		const offset = (direction === 'forward')
 			? this.state.scrolledFromLeft + viewportWidth
 			: this.state.scrolledFromLeft - viewportWidth		
-		
+		const normalizeOffset = (offset) => {
+			if (offset < 0) {
+				return 0
+			}
+			if (offset > this.container.scrollWidth - viewportWidth) {
+				return this.container.scrollWidth - viewportWidth
+			}
+			return offset
+		}
 		this.container.scroll({
 			behavior,
-			left: offset,
+			left: normalizeOffset(offset),
 			top: 0
 		})
 		this.setState({
 			viewportWidth,
-			scrolledFromLeft: (offset >= 0) ? offset: 0 })		
+			scrolledFromLeft: normalizeOffset(offset)
+		})
 	}
 
 	handleResize(event) {
@@ -126,9 +137,9 @@ export default styled(class HorizontalScrollContainer extends Component {
 		)
 	}
 })`
-	max-height: 100vh;  
   	overflow: hidden;
 	width: 100vw;	
+	height: 100%;
 	.scroll-delimiter {
 		text-align: justify;	  	
 		column-width: 100vw;
@@ -137,7 +148,7 @@ export default styled(class HorizontalScrollContainer extends Component {
 		max-height: ${props => props.blogPost ? 'calc(100vh - 60px)' : '100vh'};		
 		margin: ${props => props.blogPost ? '30px 0' : 0};	
 		@media (min-width: 768px) {
-			column-width: ${props => props.blogPost? '50vw' : '100vw'};
+			column-width: ${props => props.blogPost ? '50vw' : '100vw'};
 		}
 	}
 `

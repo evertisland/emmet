@@ -2,25 +2,29 @@
 * {
   box-sizing: border-box
 }
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  height: 100%;
   font-size: 1.25rem;
   font-family: 'Roboto Mono';
   background-color: black;
-  overflow: hidden;
 }
 body {
-  min-height: 100%;
   display: flex;
+}
+html, body {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
 }
 #___gatsby {
   display: flex;
   flex: 1;
 }
+
 html, body, p, h1, h2, h3 {
   margin: 0
 }

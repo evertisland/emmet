@@ -18,7 +18,6 @@ const size = {
 	xxl: '3.998rem'
 }
 
-
 const image = {
 	background: 'url("../../uploads/dogs.jpg")'
 }

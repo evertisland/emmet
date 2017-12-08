@@ -34,6 +34,7 @@ const TemplateWrapper = ({ children }) => (
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
+        { name: 'apple-mobile-web-app-capable', content:'yes' },
       ]}
     />
     <Header />
