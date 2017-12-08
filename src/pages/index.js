@@ -26,19 +26,28 @@ const LandingPage = styled.div`
   width: 100vw;
   height: 100vh;
 `
-
+const onIos  = /iPad|iPhone|iPod/.test(navigator.userAgent);
 const IndexPage = ({ className, data }) => (
   <div className={className}>
     <BackgroundImage
       sizes={data.imageSharp.sizes}
       style={{ position: `absolute`, top: 0, left: 0, right: 0, bottom: 0}}
     />
-    <HorizontalScrollContainer index>
+    { onIos && 
       <Content>
-        <LandingPage />
-        <Journal posts={data.allMarkdownRemark.edges} />
+         <LandingPage />
+          <Journal posts={data.allMarkdownRemark.edges} />
       </Content>
-    </HorizontalScrollContainer>
+    }
+    { !onIos && 
+      <HorizontalScrollContainer index>
+        <Content>
+          <LandingPage />
+          <Journal posts={data.allMarkdownRemark.edges} />
+        </Content>
+      </HorizontalScrollContainer>
+    }
+    
   </div>
 )
 

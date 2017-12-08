@@ -139,7 +139,7 @@ export default styled(class HorizontalScrollContainer extends Component {
 })`
   	overflow: hidden;
 	width: 100vw;	
-	height: 100%;
+	height: 100vh;
 	.scroll-delimiter {
 		text-align: justify;	  	
 		column-width: 100vw;

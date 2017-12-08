@@ -22,7 +22,9 @@ html, body {
 }
 #___gatsby {
   display: flex;
+  position: fixed;
   flex: 1;
+  overflow: hidden;
 }
 
 html, body, p, h1, h2, h3 {
