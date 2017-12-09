@@ -2,25 +2,24 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import ui from '../layouts/theme'
+import HorizontalScrollContainer from '../components/HorizontalScrollContainer'
 
 const Container = styled.div`
   width: 100%;
   flex: 1;  
-  overflow-y: auto;
-  .blog-posts {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  break-inside: avoid;
 `
 
 const Preview = styled.div`		
-	margin-bottom: ${ui.size.xs};
-	width: 100%;
+	width: 100%;	
 	.blog-post-preview {
-		background: rgba(0,0,0,0.5);
-		margin: ${ui.size.xxs};
-		padding: ${ui.size.s};
+		background: rgba(14,17,17,0.4);		
+		margin: 0 ${ui.component.body.margin};
+		padding: ${ui.size.s};		
+		padding-bottom: 20px;
 		transition: background ease-in-out .2s;
 		height: 100%;
 		&:hover {
@@ -29,7 +28,7 @@ const Preview = styled.div`
 	}
 	h1 {
 		color: ${ui.color.accent};
-		font-size: ${ui.size.ml};
+		font-size: ${ui.size.m};
 	}
 	h2 {
 		font-size: ${ui.size.ms};
@@ -44,37 +43,33 @@ const Preview = styled.div`
 	}
 	@media (min-width: 768px) {
 		width: 50%;
+		.blog-post-preview {
+			margin: 0;
+		}
+		h1 {
+			font-size: ${ui.size.ml};
+		}
 	}
-`
-const Title = styled.h1`
-	color: ${ui.color.accent};
-	padding: ${ui.size.s};
-	border-bottom: 10px solid black;
-	display: inline;
-	line-height: 3;
 `
 
 export default function Journal ({ posts }) {
 	return (
 		<Container>
-			<Title>JOURNAL</Title>
-			<div className="blog-posts">
-				{posts
-					.filter(post => post.node.frontmatter.title.length > 0)
-					.map(({ node: post }) => {
-						return (
-							<Preview key={post.id}>
-								<Link to={post.frontmatter.path}>
-									<div className="blog-post-preview">
-										<h1>{post.frontmatter.title}</h1>
-										<h2>{post.frontmatter.date}</h2>
-										{/* <p>{post.excerpt}</p> */}
-									</div>
-								</Link>
-							</Preview>
-						);
-					})}
-			</div>
+			{posts
+				.filter(post => post.node.frontmatter.title.length > 0)
+				.map(({ node: post }) => {
+					return (
+						<Preview key={post.id}>
+							<Link to={post.frontmatter.path}>
+								<div className="blog-post-preview">
+									<h1>{post.frontmatter.title}</h1>
+									<h2>{post.frontmatter.date}</h2>
+									{/* <p>{post.excerpt}</p> */}
+								</div>
+							</Link>
+						</Preview>
+					);
+				})}
 		</Container>
 	);
 }

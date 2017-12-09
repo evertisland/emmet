@@ -34,17 +34,19 @@ export default styled(class HorizontalScrollContainer extends Component {
 	}
 
 	componentDidMount() {
+		window.addEventListener('orientationchange', this.handleResize, { passive: true })
 		window.addEventListener('resize', this.handleResize, { passive: true })
 		this.setState({ isIOS: /iPad|iPhone|iPod/.test(navigator.userAgent) })
 	}
 
 	componentWillUnmount() {
+		window.removeEventListener('orientationchange', this.handleResize)
 		window.removeEventListener('resize', this.handleScroll)
 	}
 
 	scroll(direction, behavior) {
 		const width = this.container.parentNode.clientWidth
-		const viewportWidth = (width > 767 && this.props.blogPost) ? width / 2 : width
+		const viewportWidth = (width > 767 && this.props.columns) ? width / 2 : width
 		
 		const offset = (direction === 'forward')
 			? this.state.scrolledFromLeft + viewportWidth
@@ -137,18 +139,18 @@ export default styled(class HorizontalScrollContainer extends Component {
 		)
 	}
 })`
+	postition: relative;
   	overflow: hidden;
-	width: 100vw;	
-	height: 100%;
-	.scroll-delimiter {
+	width: 100vw;
+	.scroll-delimiter {		
 		text-align: justify;	  	
 		column-width: 100vw;
 		column-gap: 0;
 		column-rule: 2px dashed rgba(14,17,17,0.4);
-		max-height: ${props => props.blogPost ? 'calc(100vh - 60px)' : '100vh'};		
-		margin: ${props => props.blogPost ? '30px 0' : 0};	
+		max-height: calc(100vh - 120px);		
+		margin: 30px 0 90px;	
 		@media (min-width: 768px) {
-			column-width: ${props => props.blogPost ? '50vw' : '100vw'};
+			column-width: ${props => props.columns ? '50vw' : '100vw'};
 		}
 	}
 `

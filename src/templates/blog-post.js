@@ -21,7 +21,7 @@ export default styled(({ className, data }) => (
 	<div className={className}>
 		<Helmet title={`Paul Emmet - ${data.markdownRemark.frontmatter.title}`} />
 		<div className="blog-post">
-			<HorizontalScrollContainer blogPost>
+			<HorizontalScrollContainer columns>
 				<div className="padding">
 					<h1 className="title">
 						{data.markdownRemark.frontmatter.title.toUpperCase()}
@@ -39,6 +39,9 @@ export default styled(({ className, data }) => (
   color: ${ui.color.content};
 	background: ${ui.color.white};
 	position: relative;
+	.content img {
+		break-inside: avoid;
+	}
   .padding {
 		padding: ${ui.size.m}; 
 	}
@@ -47,7 +50,7 @@ export default styled(({ className, data }) => (
 		margin: ${ui.size.m} 0;
 	}
 	p {
-		font-size: ${ui.size.ms};
+		font-size: 12px;
 	}	
   .title {
 		text-align: left;  
@@ -58,7 +61,7 @@ export default styled(({ className, data }) => (
 	@media (min-width: 768px) {
 		column-width: 50vw;
 		p {
-			font-size: ${ui.size.m};
+			font-size: 16px;
 		}	
 		.title {
 			letter-spacing: -5px;

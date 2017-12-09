@@ -18,7 +18,6 @@ const Border = styled.div`
   right: ${props => (props.right || props.bottom || props.top) ? '0' : 'auto'};
 `
 const LayoutContainer = styled.div`
-  //margin: ${ui.component.body.margin};  
   width: 100%;
   display: flex;
   overflow: hidden;

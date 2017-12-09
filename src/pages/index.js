@@ -17,17 +17,12 @@ const BackgroundImage = styled(GatsbyImage)`
 const Content = styled.div`
   z-index:1;
   position: relative;
-  padding: ${ui.size.s}
 `
 const LandingPage = styled.div`
   position: relative;
   padding: ${ui.size.s}
   width: 100vw;
   height: 100vh;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `
 
 const IndexPage = ({ className, data }) => (
@@ -37,7 +32,10 @@ const IndexPage = ({ className, data }) => (
       style={{ position: `absolute`, top: 0, left: 0, right: 0, bottom: 0}}
     />
     <Content>
+      <HorizontalScrollContainer index>
+      <LandingPage>&darr;</LandingPage>
       <Journal posts={data.allMarkdownRemark.edges} />
+      </HorizontalScrollContainer>
     </Content>
   </div>
 )
@@ -49,7 +47,7 @@ export default styled(IndexPage)`
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-top: 50px;
+  padding-top: 30px;
 `
 
 export const queries = graphql`
