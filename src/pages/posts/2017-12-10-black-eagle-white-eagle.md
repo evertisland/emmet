@@ -1,5 +1,5 @@
 ---
-path: phewa-lake-pakora
+path: /phewa-lake-pakora
 layout: blog
 title: Black Eagle White Eagle
 date: 2017-12-10T01:48:48.220Z
