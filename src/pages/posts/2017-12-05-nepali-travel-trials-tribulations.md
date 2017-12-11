@@ -6,6 +6,8 @@ date: 2017-12-05T01:39:44.591Z
 ---
 ![undefined](/images/IMG_1435.JPG)
 
+
+
 A completely bonkers day. Up at 7am in Pakhora to catch Buddha Air to Kathmandu at 9.20am, only a 25 minute flight along the mountain ranges in transit for a 2.45pm to Kuala Lumpah and an overnight, then onto Cebu, Philippines, in the morning. The first flight is delayed, go drinking coffee and smoking fags with Luke from California on the airport veranda. Saw an eagle circle, swoop and scoop a snake, wriggling in its talons, as the bird flapped off, twisting with the mountains in the background 'til it was dropped. Meet some young police is colourful army fatigues, the whole country is in a state of high alert, the elections are in full swing and a splinter group of Maoist guerrillas are doing their best to disrupt them. Get a cool picture of the cops and Luke, we smile and joke with them, their speech, faces shining and glad to practice some English. Going back into the terminal the steward says its another 30 minutes. 
 
 Nepali chaos starts to unfold now, the fog in Kathmandu has snarled everything up. Some two hours later and no plane, every flight is delayed, every engine I peer expectently but it's Yeti Air, or Nepali Air, no Buddha Air. Take some McVites chocolate digestives and read the Perfumed Garden in the airport shop to stay calm - it helps somewhat.
