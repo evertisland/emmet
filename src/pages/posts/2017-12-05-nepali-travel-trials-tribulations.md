@@ -1,7 +1,7 @@
 ---
 path: /Nepali-Trials-Tribulations
 layout: blog
-title: Nepali Travel Trials & Tribulations
+title: 'Nepali Travel '
 date: 2017-12-05T01:39:44.591Z
 ---
 ![undefined](/images/IMG_1435.JPG)
