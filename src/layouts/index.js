@@ -31,8 +31,8 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="Paul Emmet"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Paul Emmet\'s words. Arranged into intricate patterns. With pictures sprinkled on top.   ' },
+        { name: 'keywords', content: 'Environment, travel, poertry, prose' },
         { name: 'apple-mobile-web-app-capable', content:'yes' },
       ]}
     />

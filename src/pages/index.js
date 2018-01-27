@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import ui from '../layouts/theme'
 import GatsbyImage from 'gatsby-image'
 import Journal from '../components/Journal'
-import HorizontalScrollContainer from '../components/HorizontalScrollContainer'
+
 const Title = styled.h1`
   color: ${ui.color.background};
 `
@@ -32,10 +32,8 @@ const IndexPage = ({ className, data }) => (
       style={{ position: `absolute`, top: 0, left: 0, right: 0, bottom: 0}}
     />
     <Content>
-      <HorizontalScrollContainer index>
-      <LandingPage>&darr;</LandingPage>
+      <LandingPage></LandingPage>
       <Journal posts={data.allMarkdownRemark.edges} />
-      </HorizontalScrollContainer>
     </Content>
   </div>
 )

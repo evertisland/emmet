@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import ui from '../layouts/theme'
-import HorizontalScrollContainer from '../components/HorizontalScrollContainer'
 
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
@@ -21,7 +20,6 @@ export default styled(({ className, data }) => (
 	<div className={className}>
 		<Helmet title={`Paul Emmet - ${data.markdownRemark.frontmatter.title}`} />
 		<div className="blog-post">
-			<HorizontalScrollContainer columns>
 				<div className="padding">
 					<h1 className="title">
 						{data.markdownRemark.frontmatter.title.toUpperCase()}
@@ -31,14 +29,20 @@ export default styled(({ className, data }) => (
 						dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}>
 					</div>
 				</div>
-			</HorizontalScrollContainer>
 		</div>
 	</div>
 ))`
 	display: flex;
   color: ${ui.color.content};
 	background: ${ui.color.white};
+	width: 100%;
+	justify-content: center;
 	position: relative;
+	.content {
+		max-width: 700px;
+		text-align: justify;
+		margin: 30px 0;
+	}
 	.content img {
 		break-inside: avoid;
 	}

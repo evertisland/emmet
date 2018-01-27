@@ -55,8 +55,8 @@ export default styled(class HorizontalScrollContainer extends Component {
 			if (offset < 0) {
 				return 0
 			}
-			if (offset > this.container.scrollWidth - viewportWidth) {
-				return this.container.scrollWidth - viewportWidth
+			if (offset > this.container.scrollWidth - width) {
+				return this.container.scrollWidth - width
 			}
 			return offset
 		}
