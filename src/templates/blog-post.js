@@ -37,6 +37,7 @@ export default styled(({ className, data }) => (
 	background: ${ui.color.white};
 	width: 100%;
 	justify-content: center;
+	margin-top: 20px;
 	position: relative;
 	.content {
 		max-width: 700px;
