@@ -10,9 +10,12 @@ const Title = styled.h1`
 const BackgroundImage = styled(GatsbyImage)`
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;  
+  width: 300%;
+  @media (min-width:768px) {
+    width: 100%;
+  }
 `
 const Content = styled.div`
   z-index:1;
@@ -29,7 +32,7 @@ const IndexPage = ({ className, data }) => (
   <div className={className}>
     <BackgroundImage
       sizes={data.imageSharp.sizes}
-      style={{ position: `absolute`, top: 0, left: 0, right: 0, bottom: 0}}
+      style={{ position: `absolute`, top: 0, right: 0, bottom: 0}}
     />
     <Content>
       <LandingPage></LandingPage>
