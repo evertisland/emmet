@@ -4,7 +4,7 @@ layout: blog
 title: 'Siargoan Days, Siargoan Nights'
 date: 2017-10-27T07:10:06.487Z
 ---
-![undefined](/images/IMG_4049.JPG)
+![undefined](/images/IMG_1529.JPG)
 
 The child tribe has two modes, happy or sad. They either laugh, sing, skip around giddy and smiling, or slope sullenly, meeting you with a steady gaze containing a thousand years of sadness condensed into their teenage souls. They do everything, but none of it very well, cooking, cleaning, emptying the toilet bins or running errands. Always dutifully but always ineffectively. Päl the manager is frequently exasperated, he explains countless times how a task should be completed, somehow the resort functions, hovering between his frustration and amusement. 
 
