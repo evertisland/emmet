@@ -4,6 +4,8 @@ layout: blog
 title: Already Leaving the Island
 date: 2017-10-27T07:09:00.310Z
 ---
+![undefined](/images/IMG_5289.JPG)
+
 Already leaving the island, awake at 4am after a dismal sweat drenched half sleep. The last evening and out with the Swedes and an Ozzie, dinner at a swanky neighbouring hotel. Sitting outside by the sea and a Frank Sinatra wind blows. Talk of swells, surf, sharks and the Friday night out in Jungle, as Siargao's best pizza and pasta is served. 
 
 Max tells a rollicking story how he and his brother, surfing in Canada, saw a huge cathedral shaped fin heading straight at him. Max tucked his knees up on the board, his brother riding the foam ashore. 
@@ -12,9 +14,10 @@ As it cruised by at practically touching distance, the massive black shape with 
 
 Today's main dinner story was about a whitey. While surfing on the gold coast he saw a baby dolphin was swimming evasively, leaping out of the water, suddenly a big great white loomed up and bit it in half. Luckily there are very few sharks in the Philippines, unfortunately few dolphins too.
 
- The illegal practice of dynamiting the reefs is still common. And the crocidile release programme is spluttering, all the big 3 metre salties have been eaten, or hide deep in the mangroves out of sight. There is a rumour about a big lone tiger shark at Stimpies surf spot, and spurious sightings told by surfers, although usually to scare people away from their favourite spots.
+The illegal practice of dynamiting the reefs is still common. And the crocodile release programme is spluttering, all the big 3 metre salties have been eaten, or hide deep in the mangroves out of sight. There is a rumour about a big lone tiger shark at Stimpies surf spot, and spurious sightings told by surfers, although usually to scare people away from their favourite spots.
 
-\
+![undefined](/images/IMG_2126.JPG)
+
 At 4.30am am downstairs with my bags, Pal gets up to make me a farewell coffee. I will see him later in Cebu for a reunion with Tim and then onto KL and Borneo. Still, it's always sad to leave the island and the photo of the departees is ritualistically observed, no matter what time. It's still dark as I climb aboard the habble habble and we putter into the night. 
 
 On the outskirts of GL I tap the driver on the shoulder indicating for him to stop, on the side of the road they are baking little sweet loaves of bread, I buy four and we share them. There is no other traffic until we get near to Dapa and I'm dropped at the port in plenty of time. 
@@ -29,4 +32,6 @@ The sailors lean on the balcony and smoke, they have seen it a million times and
 
 The wake from the boat is enormous, a thick swell carving the dark blue waters, and the coastguard outboard chases us. Three heavily armed grown men, grinning like children as the pilot rides up and across the waves. Spray showers their boat and he crisscrosses the churning sea displaying his boatmanship before peeling off to resume their coastal patrols.
 
- In the port terminal was a reminder that while I'm living in an earthly paradise, then sharks are all too real. A large poster on the wall wildwest style blazes 'Wanted Local Terrorists', and 100 faces or so look back at you. It's a reminder that the region of Mindano is still under marshal law after the ISIS insurrection in the south, and the all out war on drugs has now claimed over 15,000 lives in the last 2 years.
+![undefined](/images/27017385_10215485646720927_306082931_o.jpg)
+
+In the port terminal was a reminder that while I'm living in an earthly paradise, then sharks are all too real. A large poster on the wall wildwest style blazes 'Wanted Local Terrorists', and 100 faces or so look back at you. It's a reminder that the region of Mindano is still under marshal law after the ISIS insurrection in the south, and the all out war on drugs has now claimed over 15,000 lives in the last 2 years.
