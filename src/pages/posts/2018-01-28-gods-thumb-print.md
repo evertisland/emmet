@@ -1,7 +1,7 @@
 ---
 path: /Gods-thumb-print
 layout: blog
-title: Gods thumb print
+title: God's thumb print
 date: 2018-01-28T14:15:39.231Z
 ---
 ![undefined](/images/Photo28_29.jpg)
@@ -12,17 +12,11 @@ Hands down, Pacifico on the north-east coast of Siargao Island is my favourite p
 
 Hope For the Island
 
-
-
 I’m staying at Pacifico Beach Resort positioned at the south end of the beach, visible for an instant through the jungle canopy as you roll down the hill. Pacifico Beach Resort is just three building which blend into the environment. A green beach hut that sleeps 4, the beach house with 4 double rooms and a bunkbed area and the Garden house with 3 more rooms one family room large enough to accommodate eight people. The rooms are clean, comfortable and well serviced. For 20 euro a night, halve that if you are sharing, it is exceptional value, an ocean breeze gently rattling the mosquito mesh on your open window as you fall asleep to the sound of the surf and wake up to a million dollar view. The resort is a paragon of the sustainable tourism we hear so much about, the restaurant serves food made from organic ingredients sourced on the Hope For the Island Farm some 10km away. The staff are local, well trained, friendly, and extremely accommodating. Experiencing a black out on the island, all guests were provided with emergency lights and the kitchen, cooking on gas, remained open. The calamari is one of the best I ever tasted, the banana-cacao shake is legendary. Everything on the menu is worth a try. And even when the chef is away, the staff are all skilled up to be able to cook at the same high level. Hire a bicycle, surfboard, or splash out on some locally made jewelry, or surf wear in case you forget your board shorts, as I did. This is the perfect environment for meditation and yoga, quietly sitting and observing the ocean, or walking along the soft slanting sand. Surf one of the best waves on the island, and also one of the most frustrating, the currents mean that it is not for beginners, but when it works it really works. 
-
-
 
 ![undefined](/images/Photo22_23.jpg)
 
 Red Sky in the Morning
-
-
 
 So why do I want to share this? Siargao is experiencing the first winds of a tourism Tsunami. One year ago there was one plane a day bringing mostly surfers who came based on the word of mouth about the pristine nature, uncrowded breaks, and laid back island vibe. 6 flights are now landing daily at the tiny domestic airport and an international airport is scheduled to be opened in the next few years. There is a new dawn on Siargao, property prices have increased threefold in a year, huge swathes of land snapped up by overseas investors. I contend that small locally run and sourced resorts are the best hope for the island retaining its authenticity. The ethos at Pacifico Beach Resort with the emphasis on recycling, non-PET policy, organic locally produced fresh food, and local workers is a ray of hope, sustainable and bringing jobs and skills development.  As more resorts open their doors, and Siargao increasing becomes the domestic getaway of choice, importing customer service trained workers from off the island oft becomes the norm. Yet take a cruise up north and visit Pacifico, see the real island life and conditions and support some of the local fledgling ventures. Pacifico Beach Resort is a great hub and a fine example, where you can find info about the SEA (Siargao Environment Awareness Movement) Movement, Grom Nation collecting old surfboards and teaching the local kids to surf for free for their participation in education and skills programmes. And Nature Kids of Siargao who are raising money for a shredder to upcycle plastics and contribute. So please visit Pacifico on Sairgao and support these initiatives to help keep this paradise on the Pacific pristine for the locals and future visitors.
 
