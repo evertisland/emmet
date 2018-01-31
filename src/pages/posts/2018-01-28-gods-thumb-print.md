@@ -6,7 +6,11 @@ date: 2018-01-28T14:15:39.231Z
 ---
 ![undefined](/images/Photo20_21.jpg)
 
-Hands down, Pacifico on the north-east coast of Siargao Island is my favourite place in the world right now. A 3km stretch of sand, perched on the edge of the ocean, a landscape barely poking out of the sea which expands like a gigantic green, blue, aquamarine soup bowl into the horizon, throwing frothy fists of water, shifting white lines, slurping hungrily up the sides of the golden sands. Stand on the beach in the morning at 5.30am and watch the dawn erupt. The sky catches fire, vast clouds reflecting orange reds, pinks, and black, time is eternal waiting for the sun, colours wash the night away. God’s thumb print is suspended in the air as the brilliant yellow of the sun peeks blindingly above the horizon, burning everything a brilliant white, as it slowly climbs a pathway is projected onto the sea like the sweep of an enormous clock hand beginning its circuit for the day. Bathed in light, the air heats up, feel a tickle by your toes and look down to see a small hermit crab trundling over your feet on its way to the water. On careful inspection of the beach you realise its entirely made of these tiny creatures, trillions of shells, ground down into finer and finer pieces over millions of years. I give up counting the 8 different kinds of blue moving in 5 different directions, the surging currents greet a river coming from the jungle, huge breakers, several stories high break in the distance on the point, the mist magically drifts across the jungle canopy.
+Hands down, Pacifico on the north-east coast of Siargao Island is my favourite place in the world right now. A 3km stretch of sand, perched on the edge of the ocean, a landscape barely poking out of the sea which expands like a gigantic green, blue, aquamarine soup bowl into the horizon, throwing frothy fists of water, shifting white lines, slurping hungrily up the sides of the golden sands. Stand on the beach in the morning at 5.30am and watch the dawn erupt. The sky catches fire, vast clouds reflecting orange reds, pinks, and black, time is eternal waiting for the sun, colours wash the night away. God’s thumb print is suspended in the air as the brilliant yellow of the sun peeks blindingly above the horizon, burning everything a brilliant white, as it slowly climbs a pathway is projected onto the sea like the sweep of an enormous clock hand beginning its circuit for the day. 
+
+![undefined](/images/Photo06_7.jpg)
+
+Bathed in light, the air heats up, feel a tickle by your toes and look down to see a small hermit crab trundling over your feet on its way to the water. On careful inspection of the beach you realise its entirely made of these tiny creatures, trillions of shells, ground down into finer and finer pieces over millions of years. I give up counting the 8 different kinds of blue moving in 5 different directions, the surging currents greet a river coming from the jungle, huge breakers, several stories high break in the distance on the point, the mist magically drifts across the jungle canopy.
 
 ![undefined](/images/Photo10_11.jpg)
 
@@ -30,11 +34,11 @@ So why do I want to share this? Siargao is experiencing the first winds of a tou
 
 ![undefined](/images/Photo11_12.jpg)
 
-As more resorts open their doors, and Siargao increasing becomes the domestic getaway of choice, importing customer service trained workers from off the island oft becomes the norm. Yet take a cruise up north and visit Pacifico, see the real island life and conditions and support some of the local fledgling ventures. Pacifico Beach Resort is a great hub and a fine example, where you can find info about the SEA (Siargao Environment Awareness Movement) Movement, Grom Nation collecting old surfboards and teaching the local kids to surf for free for their participation in education and skills programmes. And Nature Kids of Siargao who are raising money for a shredder to upcycle plastics and contribute. So please visit Pacifico on Sairgao and support these initiatives to help keep this paradise on the Pacific pristine for the locals and future visitors.
+As more resorts open their doors, and Siargao increasing becomes the domestic getaway of choice, importing customer service trained workers from off the island oft becomes the norm. Yet take a cruise up north and visit Pacifico, see the real island life and conditions, support the local fledgling ventures. Pacifico Beach Resort is a hub connecting you to a wheel of initiatives, you can do yoga and find info about the SEA (Siargao Environment Awareness Movement) Movement and their beach cleanups. Surf and then meet Grom Nation collecting old surfboards, teaching the local kids to surf for free for their participation in education and skills programmes. Meditate and give a donation to the Nature Kids of Siargao who are raising money for a shredder to upcycle plastics and contribute. So visit Pacifico on Sairgao, connect and contribute to these initiatives and help keep paradise on the Pacific pristine for the locals and future visitors.
 
 ![undefined](/images/Photo25_26.jpg)
 
-www.Pacificobeachresort.com
+https://www.Pacificobeachresort.com
 
 https://web.facebook.com/PacificoBeachResort/?ref=br_rs
 
