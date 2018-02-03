@@ -16,8 +16,6 @@ Bathed in light, the air heats up, feel a tickle by your toes and look down to s
 
 Hope For the Island
 
-
-
 I’m staying at Pacifico Beach Resort positioned at the south end of the beach, visible for an instant through the jungle canopy as you roll down the hill. Pacifico Beach Resort is just three building which blend into the environment. A green beach hut that sleeps 4, the beach house with 4 double rooms and a bunkbed area and the Garden house with 3 more rooms one family room large enough to accommodate eight people. The rooms are clean, comfortable and well serviced. For 20 euro a night, halve that if you are sharing, it is exceptional value, an ocean breeze gently rattling the mosquito mesh on your open window as you fall asleep to the sound of the surf and wake up to a million dollar view. The resort is a paragon of the sustainable tourism we hear so much about, the restaurant serves food made from organic ingredients sourced on the Hope For the Island Farm some 10km away. 
 
 ![undefined](/images/Photo05_6.jpg)
@@ -28,8 +26,6 @@ The staff are local, well trained, friendly, and extremely accommodating. Experi
 
 Red Sky in the Morning
 
-
-
 So why do I want to share this? Siargao is experiencing the first winds of a tourism Tsunami. One year ago there was one plane a day bringing mostly surfers who came based on the word of mouth about the pristine nature, uncrowded breaks, and laid back island vibe. 6 flights are now landing daily at the tiny domestic airport and an international airport is scheduled to be opened in the next few years. There is a new dawn on Siargao, property prices have increased threefold in a year, huge swathes of land snapped up by overseas investors. I contend that small locally run and sourced resorts are the best hope for the island retaining its authenticity. The ethos at Pacifico Beach Resort with the emphasis on recycling, non-PET policy, organic locally produced fresh food, and local workers is a ray of hope, sustainable and bringing jobs and skills development.  
 
 ![undefined](/images/Photo11_12.jpg)
@@ -38,7 +34,7 @@ As more resorts open their doors, and Siargao increasing becomes the domestic ge
 
 ![undefined](/images/Photo25_26.jpg)
 
-https://www.Pacificobeachresort.com
+http://www.pacificobeachresort.com/
 
 https://web.facebook.com/PacificoBeachResort/?ref=br_rs
 
