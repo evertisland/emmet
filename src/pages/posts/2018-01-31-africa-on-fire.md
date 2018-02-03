@@ -2,7 +2,7 @@
 path: /Africa-On-Fire
 layout: blog
 title: Africa On Fire
-date: '11/08/2018 8:48 AM'
+date: 11/08/2017 8:48 AM
 ---
 ![undefined](/images/CNV000022.JPG)
 
