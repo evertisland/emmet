@@ -2,7 +2,7 @@
 path: /Gods-thumb-print
 layout: blog
 title: God's Thumb Print
-date: 2018-01-28T14:15:39.231Z
+date: '2017-08-11 08:48:21 UTC'
 ---
 ![undefined](/images/Photo20_21.jpg)
 
