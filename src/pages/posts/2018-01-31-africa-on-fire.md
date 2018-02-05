@@ -1,5 +1,5 @@
 ---
-path: /africa-on-fire
+path: /Africa-On-Fire
 layout: blog
 title: Africa On Fire
 date: '11/08/2017 8:48 AM'
