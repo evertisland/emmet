@@ -12,7 +12,7 @@ date: '2018-03-19T08:15:47+08:00'
 
 How do we create effective international teams for real, that like trash are borderless, that flow and develop, sharing ideas, information, that take us to the next stage? We got a history lesson from Ricky Anthony, President of the Zero Waste International Alliance, and a vision of the future from Captain Charles Moore (discoverer of the Pacific garbage patch). Both now attending the Marine Debris conference in California where the top thinkers, activists and world changers are gathering (including Zero Waste Expert Päl Martenson and the Knowledge Team’s Enzo Favoino). Here is a snippet from a conversation some thousands of miles away and months earlier on the snowy streets of Tallinn after the last day of the Clean World Conference 2018.
 
-![]()
+![](/images/see it adaptations montage.jpeg)
 
 **Zero Waste - or Damn Close!**
 
