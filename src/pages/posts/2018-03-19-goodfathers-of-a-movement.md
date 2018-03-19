@@ -6,23 +6,41 @@ date: '2018-03-19T08:15:47+08:00'
 ---
 ![null](/images/img_3007.jpg)
 
-[Let's Do It!](https://www.letsdoitworld.org/)World  Zero Waste experts Päl Martenson and Enzo Faviano were this week at the 6th Annual Annual Marine Debris Conference March 12-16, where Päl ran into singer songwriter, surfer and activist Jack Johnson. At an event that brought together teams from around the globe to address marine waste, our very own Swedish impromptu-activist connected with dozens of international environmental campaigners and protectors including Charles Moore and Ricky Anthony (president of[ ZWIA](zwia.org/)). This issue features an interview with two of the Godfathers of the modern environmental movement:
+[Let's Do It!](https://www.letsdoitworld.org/)World  Zero Waste experts Päl Martenson and Enzo Faviano were this week at the 6th Annual Annual Marine Debris Conference March 12-16, where Päl ran into singer songwriter, surfer and activist [**Jack Johnson**](https://www.youtube.com/watch?v=PeFJlk8eOhQ). At an event that brought together teams from around the globe to address marine waste, our very own Swedish impromptu-activist connected with dozens of international environmental campaigners and protectors including Charles Moore and Ricky Anthony (president of[ ZWIA](zwia.org/)). This issue features an interview with two of the Godfathers of the modern environmental movement:
+
+
+
+
 
 How do we create effective international teams for real, that like trash are borderless, that flow and develop, sharing ideas, information, that take us to the next stage? We got a history lesson from Ricky Anthony, President of the Zero Waste International Alliance, and a vision of the future from Captain Charles Moore (discoverer of the Pacific garbage patch). Both now attending the Marine Debris conference in California where the top thinkers, activists and world changers are gathering (including Zero Waste Expert Päl Martenson and the Knowledge Team’s Enzo Favoino). Here is a snippet from a conversation some thousands of miles away and months earlier on the snowy streets of Tallinn after the last day of the Clean World Conference 2018.
+
+
+
+
 
 **Zero Waste - or Damn Close!**
 
 Ricky had this to say about Tallinn: This isn’t a dirty town, the streets are clean the buildings are bright, they don’t look like they need painting, people care about this town. On the History of Zero Waste: In New Zealand Warren Snow and Costco a big box store came together to give money to all the little cities to put recycling transfer stations up waste and they called it Zero Waste, so I give it to Warren Snow in NZ, and we came back here it was our core group including Dann Knapp enthused with green positive thinking, and we started talking about Zero Waste. There were 8 of us walking down the street arguing, yeah Zero Waste, finally Eric Lombardi said Zero Waste – or damn close and we said OK, Zero Waste or damn close. Thing is, the engineers and scientists can’t believe in Zero Waste, we say zero they say bullshit and they walk away if you say 99.99 then ok that makes sense, science measures things and science has metrics 100% means 100%. If I am going to coach your soccer team and I tell you am gonna win 50% of my games you’re gonna fire me, I say 100 % and even if I lose one then I’m still 90% I made it, I am over the top.
 
-![null](/images/29339866_1450636231715013_2575085880410636288_o.jpg)
+![](/images/29339866_1450636231715013_2575085880410636288_o.jpg)
 
-** ‘The new is beginning and for those who cling to the old the new will be horrible. What will you do?’ - Hermann Hesse, Demian**
+**The new is beginning and for those who cling to the old the new will be horrible. What will you do?’ - Hermann Hesse, Demian**
+
+
 
 **Charles**: The mission here is to go further. It’s can’t be business as usual as we move forward, these topics are getting too urgent and undeniable. 
 
+
+
 **Paul**: Yes, OK, we are saying: can’t we do better? 
 
+
+
 **Charles**: Yes. I’m always going to take that position. Social Media, at some level, represents a rational point of view to an enlarged group of young people, that can see beyond the system, and know that very unusual projects succeed — they are just looking for that ‘silver bullet’ that will make things better, and we are not going to stop at that. . . there’s not a silver bullet, we gotta do the hard work, but, at the same time, that’s the constituency I want to represent. We are the ones saying, ‘business un-usual’, business as usual got us where we are, so we have to have business un-usual, yes, it’s like Einstein’s quote that everybody says: **the thinking that causes the problem can’t be used to get you out of the problem**
+
+
+
+
 
 **Ricky and the Birth of a Movement (ctd)**
 
