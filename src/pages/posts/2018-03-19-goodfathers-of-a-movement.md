@@ -4,15 +4,11 @@ layout: blog
 title: Goodfathers of a Movement
 date: '2018-03-19T08:15:47+08:00'
 ---
-![](/images/img_3007.jpg)
+![null](/images/img_3007.jpg)
 
 [Let's Do It!](https://www.letsdoitworld.org/)World  Zero Waste experts Päl Martenson and Enzo Faviano were this week at the 6th Annual Annual Marine Debris Conference March 12-16, where Päl ran into singer songwriter, surfer and activist Jack Johnson. At an event that brought together teams from around the globe to address marine waste, our very own Swedish impromptu-activist connected with dozens of international environmental campaigners and protectors including Charles Moore and Ricky Anthony (president of[ ZWIA](zwia.org/)). This issue features an interview with two of the Godfathers of the modern environmental movement:
 
-![](/images/screen shot 2018-03-19 at 09.19.36.jpg)
-
 How do we create effective international teams for real, that like trash are borderless, that flow and develop, sharing ideas, information, that take us to the next stage? We got a history lesson from Ricky Anthony, President of the Zero Waste International Alliance, and a vision of the future from Captain Charles Moore (discoverer of the Pacific garbage patch). Both now attending the Marine Debris conference in California where the top thinkers, activists and world changers are gathering (including Zero Waste Expert Päl Martenson and the Knowledge Team’s Enzo Favoino). Here is a snippet from a conversation some thousands of miles away and months earlier on the snowy streets of Tallinn after the last day of the Clean World Conference 2018.
-
-![](/images/see it adaptations montage.jpeg)
 
 **Zero Waste - or Damn Close!**
 
@@ -26,9 +22,7 @@ Ricky had this to say about Tallinn: This isn’t a dirty town, the streets are 
 
 **Paul**: Yes, OK, we are saying: can’t we do better? 
 
-**Charles**: Yes. I’m always going to take that position. Social Media, at some level, represents a rational point of view to an enlarged group of young people, that can see beyond the system, and know that very unusual projects succeed — they are just looking for that ‘silver bullet’ that will make things better, and we are not going to stop at that. . . there’s not a silver bullet, we gotta do the hard work, but, at the same time, that’s the constituency I want to represent. We are the ones saying, ‘business un-usual’, business as usual got us where we are, so we have to have business un-usual, yes, it’s like Einstein’s quote that everybody says; **the thinking that causes the problem can’t be used to get you out of the problem’**
-
-![](/images/screen shot 2018-02-18 at 11.34.40.jpeg)
+**Charles**: Yes. I’m always going to take that position. Social Media, at some level, represents a rational point of view to an enlarged group of young people, that can see beyond the system, and know that very unusual projects succeed — they are just looking for that ‘silver bullet’ that will make things better, and we are not going to stop at that. . . there’s not a silver bullet, we gotta do the hard work, but, at the same time, that’s the constituency I want to represent. We are the ones saying, ‘business un-usual’, business as usual got us where we are, so we have to have business un-usual, yes, it’s like Einstein’s quote that everybody says: **the thinking that causes the problem can’t be used to get you out of the problem**
 
 **Ricky and the Birth of a Movement (ctd)**
 
