@@ -6,7 +6,7 @@ date: '2018-03-19T08:15:47+08:00'
 ---
 ![Päl Martenson and Jack Johnson at the 6th Annual Marine Debris Conference](/images/img_3007.jpg)
 
-**Goodfathers of a Movement -  Meeting Richard Anthony & Captain Charles Moore**
+Let's Do It!World  Zero Waste experts Päl Martenson and Enzo Faviano were this week at the 6th Annual Annual Marine Debris Conference March 12-16, where Päl ran into singer songwriter, surfer and activist Jack Johnson. At an event that brought together teams from around the globe to address marine waste, our very own Swedish impromptu-activist connected with dozens of international environmental campaigners and protectors including Charles Moore and Ricky Anthony (president of ZWIA). This issue features an interview with two of the Godfathers of the modern environmental movement :
 
 How do we create effective international teams for real, that like trash are borderless, that flow and develop, sharing ideas, information, that take us to the next stage? We got a history lesson from Ricky Anthony, President of the Zero Waste International Alliance, and a vision of the future from Captain Charles Moore (discoverer of the Pacific garbage patch). Both now attending the Marine Debris conference in California where the top thinkers, activists and world changers are gathering (including Zero Waste Expert Päl Martenson and the Knowledge Team’s Enzo Favoino). Here is a snippet from a conversation some thousands of miles away and months earlier on the snowy streets of Tallinn after the last day of the Clean World Conference 2018.
 
