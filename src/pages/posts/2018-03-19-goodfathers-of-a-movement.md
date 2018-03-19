@@ -26,7 +26,7 @@ Ricky had this to say about Tallinn: This isn’t a dirty town, the streets are 
 
 **The new is beginning and for those who cling to the old the new will be horrible. What will you do?’ - Hermann Hesse, Demian**
 
-![](/images/d575f0363f01f9f6d9605c7cd4117cb2.jpg)
+![](/images/salvador-dali-paintings-139.jpg)
 
 **Charles**: The mission here is to go further. It’s can’t be business as usual as we move forward, these topics are getting too urgent and undeniable. 
 
@@ -38,7 +38,7 @@ Ricky had this to say about Tallinn: This isn’t a dirty town, the streets are 
 
 **Charles**: Yes. I’m always going to take that position. Social Media, at some level, represents a rational point of view to an enlarged group of young people, that can see beyond the system, and know that very unusual projects succeed — they are just looking for that ‘silver bullet’ that will make things better, and we are not going to stop at that. . . there’s not a silver bullet, we gotta do the hard work, but, at the same time, that’s the constituency I want to represent. We are the ones saying, ‘business un-usual’, business as usual got us where we are, so we have to have business un-usual, yes, it’s like Einstein’s quote that everybody says: **the thinking that causes the problem can’t be used to get you out of the problem**
 
-
+![](/images/zwia_first_header.jpg)
 
 
 
