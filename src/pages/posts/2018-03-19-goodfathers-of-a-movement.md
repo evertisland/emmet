@@ -26,6 +26,8 @@ Ricky had this to say about Tallinn: This isn’t a dirty town, the streets are 
 
 **The new is beginning and for those who cling to the old the new will be horrible. What will you do?’ - Hermann Hesse, Demian**
 
+![](/images/d575f0363f01f9f6d9605c7cd4117cb2.jpg)
+
 **Charles**: The mission here is to go further. It’s can’t be business as usual as we move forward, these topics are getting too urgent and undeniable. 
 
 
